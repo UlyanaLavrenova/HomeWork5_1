@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+{% if message %}
+    <p><strong>{{ message }}</strong></p>
+{% endif %}
+
+<div class=vertical_menu_right>
+    <h2 >Доступные номера телефонов:</h2>
+    <table>
+        <tr>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Телефон</th>
+            <th>Адрес</th>
+        </tr>
+        {% if latest_Phone_Numbers %}
+            {% for i in latest_Phone_Numbers %}
+                <tr>
+                    <td>{{ i.FirstName }}</td>
+                    <td>{{ i.LastName }}</td>
+                    <td>{{ i.Phone }}</td>
+                    <td>{{ i.Address }}</td>
+                </tr>
+            {% endfor %}
+        {% else %}
+            <p>Телефонный каталог пуст.</p>
+        {% endif %}
+    </table>
+</div>
+</body>
+</html>

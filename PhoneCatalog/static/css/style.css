@@ -1,0 +1,48 @@
+﻿body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6em;
+    background: #d2b9ca;
+}
+h2 {
+    color: #862a3e;
+    text-align: center;
+    font-size: 34px;
+}
+h1 {
+    color: #000000;
+    text-align: left;
+    font-size: 34px;
+}
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+    color: #8A1214;
+    border: 4px double black;
+    border-collapse: collapse;
+}
+.vertical_menu_right {
+    background-color: #f1c0b3; /* Цвет фона слоя */
+    padding: 5px; /* Поля вокруг текста */
+    width: 70%; /* Ширина слоя */
+    float: left; /* Обтекание по правому краю */
+   }
+th {
+    text-align: left;
+    font-weight: bold;
+    padding: 8px;
+}
+
+td {
+    padding: 8px;
+    border: 4px black;
+}
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: black;
+}
+tr:hover {
+    background-color: #a82d26;
+    color: #fff;
+   }
